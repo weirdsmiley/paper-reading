@@ -1,0 +1,71 @@
+*CodebaseManifesto.txt*      CodebaseManifesto
+
+================================================================================
+CONTENTS                                                    CodebaseManifesto
+
+1. Introduction..........................................|CodebaseManifesto|
+2. Three-Tier Codebase...................................|Three-Tier-Codebase|
+
+================================================================================
+INTRODUCTION                                            *CodebaseManifesto*
+
+tl;dr - How to organize a research codebase?
+
+Why is it needed?
+• research codebases change far faster than product codebases
+• there is a distinct group of researchers, looking for novel ideas, and
+  engineers, who work on existing code, and both should not tread on each
+  others' works
+• remember, a stagnant research codebase fails at its core purpose: to
+  investigate and evaluate new ideas
+
+Divide the codebase in three directories:
+
+1. Core: engineering part which is tested heavily and changes infrequently.
+2. Projects: A substantial effort work (1-6 months) where testing and CI are
+   optional, but no cross-project dependencies. Mostly used by both engineers
+   and researchers.
+3. Experimental: Typically used by researchers and unapproved, funky research
+   ideas go here.
+
+================================================================================
+THREE-TIER CODEBASE                                     *Three-Tier-Codebase*
+
+• Core: libraries for reusable components like cloud data storage, notebook
+  tooling, neural network libraries, statistic tests, testing libraries and
+  convenience functions built on top of third-party libraries. Engineers
+  typically work here.
+  ◦ Code is reviewed to engineering standards. Code is tested, covered by
+    continuous integration, and should never be broken. Very low tolerance for
+    tech debt.
+  ◦ Breaking changes to core code should be accompanied by fixes to affected
+    project code. The project owner should assist in identifying potential
+    breakage. No need to fix experimental code.
+
+• Projects: A new top-level folder for each major effort (rough criteria: a
+  project represents 1-6 months of work). Engineers and researchers work here.
+  ◦ Code is reviewed for correctness. Testing is recommended but optional, as
+    is continuous integration.
+  ◦ No cross-project dependencies. If you need code from a different project,
+    either go through the effort of polishing the code into core, or clone the
+    code.
+
+• Experimental: Anything goes. Typically used by researchers. I suggest
+  namespacing by time (e.g. a new directory every month).
+  ◦ Rubber-stamp approvals. Code review is optional and comments may be
+    ignored without justification. Do not plug this into CI.
+  ◦ The goal of this directory is to create a safe space for researchers so
+    that they do not need to hide their work. By passively observing research
+    code "in the wild", engineers can understand research plain points.
+  ◦ aNY REsearch result that is shared outside the immediate research group
+    may not be derived from experimental code.
+
+The key idea is that when project-specific code is not generating research
+value, it is not worth upkeep and should be amputated. By configuring project-
+specific code to be amputatation-ready, the codebase as a whole stays healthier.
+
+================================================================================
+ vim:tw=78:sw=4:noet:ts=8:ft=help:norl:
+
+
+

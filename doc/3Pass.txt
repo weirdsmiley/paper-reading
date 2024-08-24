@@ -1,0 +1,111 @@
+*3Pass.txt*      3Pass
+
+================================================================================
+CONTENTS                                                    3Pass
+
+1. Introduction.............................................|3pass|
+  1.1. First Pass...........................................|first-pass|
+  1.2. Second Pass..........................................|second-pass|
+  1.3. Third Pass...........................................|third-pass|
+2. Doing a Literature Survey................................|literature-survey|
+
+================================================================================
+INTRODUCTION                                                  *3pass*
+
+The key idea is that you should read the paper in up to three passes. The first
+pass gives you a general idea about the paper. The second pass lets you grasp
+the paper's content, but not its details. The third pass helps you understand
+the paper in depth.
+
+================================================================================
+FIRST PASS                                                    *first-pass*
+
+The first pass is a quick scan to get an overview. You can also decide whether
+you need to do any more passes. This pass should take about five to ten minutes.
+
+1. Carefully read the title, abstract, and introduction.
+2. Read the section and sub-section headings, but ignore everything else.
+3. Read the conclusions.
+4. Glance over the references, mentally ticking off the ones you've already
+   read.
+
+At the end of first pass, you should be able to answer the five Cs:
+
+1. Category: What type of paper is this? A measurement paper? An analysis of an
+   existing system? A description of a research prototype?
+2. Content: Which other papers is it related to? Which theorectical bases were
+   used to analyze the problem?
+3. Correctness: Do the assumptions appear to be valid?
+4. Contributions: What are the paper's main contributions?
+5. Clarity: Is the paper well written?
+
+================================================================================
+SECOND PASS                                                   *second-pass*
+
+In the second pass, read the paper with greater care, but ignore details such as
+proofs.
+
+1. Look carefully at the figures, diagrams and other illustrations. Pay special
+   attention to graphs. Are results shown with error bars, so that conclusions
+   are statistically significant?
+2. Remember to mark relevant unread references for further reading.
+
+The second pass should take upto an hour. After this pass, you should be able to
+grasp the content of the paper. You should be able to summarize the main thrust
+of the paper with supporting evidence.
+
+This is a good point to pause and read more background material if needed.
+
+================================================================================
+THIRD PASS                                                    *third-pass*
+
+The key to the third pass is to attempt to virually re-implement the paper: that
+is making the same assumptions as the authors, re-create the work. By comparing
+this re-creation with the actual paper you can easily identify not only a
+paper's innovations, but also its hidden failings and assumptions.
+
+You should identify and challenge every assumption in every statement. You
+should think how you yourself would present a particular idea.
+
+This comparison lends a sharp insight into the proof and presentation techniques
+in the paper and you can likely add this to your repertoire of tools. During
+this pass, you should also jot down ideas for future work.
+
+This pass can take about four or five hours for beginners and about an hour for
+an experienced reader. At the end of this pass, you should be able to
+reconstruct the entire structure of the paper from memory, as well as be able to
+identify its strong and weak points. In particular, you should be able to
+pinpoint implicit assumptions, missing citations to relevant work, and potential
+issues with experiment or analytical techniques.
+
+================================================================================
+DOING A LITERATURE SURVEY				      *literature-survey*
+
+Paper reading skills are put to test in doing a literature survey. This will
+require you to read tens of papers, perhaps in an unfamiliar field. What papers
+should you read?
+
+First, use an academic search engine like Google Scholar or CiteSeer and some
+well-chosen keywords to find three to five recent papers in the area. Do one
+pass on each paper to get a sense of th ework, and read their related work
+sections. You will find a thumbnail summary of the recent work, and perhaps, a
+pointer to a recent survey paper.
+
+Otherwise, in the second step, find shared citations and repeated author names
+in the bibliography. These are the key papers and researchers in that area.
+Download the key papers and set them aside. Then go to the websites of key
+researchers and see where they've published recently. That will help you
+identify the top conferences in that field because the best researchers usually
+publish in the top conferences.
+
+The third step is to go to the website for these top conferences and loop
+through their recent proceedings. A quick scan will usually identify recent
+high-quality related work. These papers, along with the ones you set aside
+earlier, constitute the first version of your survey. Make two passes through
+these papers. If they all cite a key paper that you did not find earlier, obtain
+and read it, iterating as necessary.
+
+================================================================================
+ vim:tw=78:sw=4:noet:ts=8:ft=help:norl:
+
+
