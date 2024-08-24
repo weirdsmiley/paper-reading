@@ -1,4 +1,4 @@
-# paper-reading
+# paper-reading.vim
 
 This plugin doesn't do anything. It only opens up a buffer containing smart
 approaches from [1] and [2].
@@ -6,7 +6,7 @@ approaches from [1] and [2].
 ## Installation
 
 ```vim
-Plug 'weirdsmiley/paper-reading'
+Plug 'weirdsmiley/paper-reading.vim'
 ```
 
 Also, update the help tags
@@ -28,4 +28,5 @@ Also, update the help tags
 ## References
 
 [1] [Keshav, S., 2007. How to read a paper. ACM SIGCOMM Computer Communication Review, 37(3), pp.83-84.](https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf)
+
 [2] [A Research Codebase Manifesto](https://www.moderndescartes.com/essays/research_code/)
